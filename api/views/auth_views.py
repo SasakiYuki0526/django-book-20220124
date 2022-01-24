@@ -36,3 +36,9 @@ def login(request):
         return Response({'success': True, 'message': '登入成功'})
     except Account.DoesNotExist:
         return Response({'success': False, 'message': '帳號或密碼錯誤'}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['POST'])
+def logout(request):
+    request.session.flush()
+    return Response({'success': True, 'message': '登出成功'})
+
