@@ -28,7 +28,6 @@ SECRET_KEY = 'django-insecure-fekzis^-(xp!tpngg*46t0i+cbs!&5(dl6nm_bdy(&)+ea*z19
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['https://git.heroku.com/django-book-20220124.git']
 
 
